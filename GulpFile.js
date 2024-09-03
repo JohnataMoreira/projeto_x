@@ -4,7 +4,7 @@ const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
 
 function compileSass(){
-    return gulp.src('./src/styles/main.scss')
+    return gulp.src('./src/styles/*.scss')
     .pipe(sass({outputStyle: 'expanded'}))
     .pipe(gulp.dest('./build/styles/'));
 }
@@ -22,7 +22,7 @@ function compileImages(){
 }
 
 function watch(){
-    gulp.watch('./src/styles/main.scss', compileSass)
+    gulp.watch('./src/styles/*.scss', compileSass)
 }
 
 exports.default = gulp.parallel(watch, scripts, compileImages);

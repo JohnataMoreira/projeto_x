@@ -1,3 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cabin, sans-serif;
+}
+
+@font-face {
+  font-family: Cabin;
+  src: url(../../assets/fonts/Cabin/static/Cabin-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Inconsolata;
+  src: url(../../assets/fonts/Inconsolata/static/Inconsolata-Light.ttf);
+  font-weight: 200;
+}
+@font-face {
+  font-family: Nerko_One;
+  src: url(../../assets/fonts/Nerko_One/NerkoOne-Regular.ttf);
+  font-weight: 400;
+}
 body {
-  background-color: rgba(49, 227, 49, 0.853);
+  background-color: #a09f9f;
+}
+
+h1 {
+  color: rgb(233, 233, 85);
+  font-size: 80px;
 }

@@ -21,8 +21,15 @@ function compileImages(){
     .pipe(gulp.dest('./build/images'));
 }
 
-exports.default = gulp.parallel(compileSass, scripts, compileImages);
-exports.watch = function(){
-    gulp.watch('./src/styles/*.scss', gulp.parallel(compileSass))
-    gulp.watch('./src/scripts/*.js', gulp.parallel(scripts))
+function watch(){
+    gulp.watch('./src/styles/main.scss', compileSass)
 }
+
+exports.default = gulp.parallel(watch, scripts, compileImages);
+
+// exports.watch = watch;
+// exports.default = gulp.parallel(compileSass, scripts, compileImages);
+// exports.watch = function(){
+//     gulp.watch('./src/styles/*.scss', gulp.parallel(compileSass))
+//     gulp.watch('./src/scripts/*.js', gulp.parallel(scripts))
+// }

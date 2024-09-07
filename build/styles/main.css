@@ -19,9 +19,7 @@ a {
 .header h1 {
   font-size: 46px;
   text-align: center;
-  background: linear-gradient(#cbc7c7, #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #333;
 }
 
 .intro__img {

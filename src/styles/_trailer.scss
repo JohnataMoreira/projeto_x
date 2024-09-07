@@ -1,0 +1,11 @@
+.trailer{
+    margin-top: 50px;
+
+    &__title{
+        margin-bottom: 12px;
+    }
+
+    @media(max-width: 768px){
+        text-align: center;
+    }
+}

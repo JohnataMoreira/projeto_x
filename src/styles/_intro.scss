@@ -1,0 +1,40 @@
+.intro{
+    &__img{
+        mask-image: linear-gradient(to bottom, #000 50%, rgba(0,0,0,0.01) 92%);
+        margin-bottom: 50px;
+    }
+
+    &__momentos{
+        
+        &__menu{
+
+            &__link{
+
+                &:nth-child(2){
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+
+                .btn{
+                    display: block;
+                    max-width: 100%;
+                    height: 80px;
+                    background-color: #84c;
+                    color: white;
+                    border: 2px solid #89f;
+                    border-radius: 5px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 24px;
+
+                    &:hover{
+                        background-color: white;
+                        color: #84c;
+                        transition: .3s ease;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,27 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto X</title>
-    <link rel="stylesheet" href="../build/styles/main.css">
-</head>
-<body>
-    <header class="header">
-        <div class="header__container">
-            <h1>Projeto X</h1>
-            <ul class="header__menu">
-                <li class="header__menu__link">
-                    <a class="button" href="#">O filme</a>
-                </li>
-                <li class="header__menu__link">
-                    <a class="button" href="#">Sinopse</a>
-                </li>
-                <li class="header__menu__link">
-                    <a class="button" href="#">Imagens</a>
-                </li>
-            </ul>
-        </div>
-    </header>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Projeto X</title>
+        <link rel="stylesheet" href="../build/styles/main.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__container">
+                <h1>Era pra ser uma festa. Se tornou o...</h1>
+            </div>
+        </header>
+        <section class="intro">
+            <div class="intro__img">
+                <img src="../src/images/projeto_x.jpeg" alt="" />
+            </div>
+            <div class="intro__momentos">
+                <ul class="intro__momentos__menu">
+                    <li class="intro__momentos__menu__link">
+                        <a class="btn" href="#sinopse">O filme</a>
+                    </li>
+                    <li class="intro__momentos__menu__link">
+                        <a class="btn" href="#imagens">Imagens</a>
+                    </li>
+                    <li class="intro__momentos__menu__link">
+                        <a class="btn" href="#trailer">Trailer</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="sinopse" id="sinopse">
+            <div class="sinopse__img">
+                <img src="../build/images/projetox_destaque.jpg" alt="">
+            </div>
+            <div class="sinopse__text">
+                <h2>Sinope do filme</h2>
+                <p>
+                Thomas (Thomas Mann), Costa (Oliver Cooper) e JB (Jonathan Daniel Brown)
+                são grandes amigos. Eles não são populares no colégio nem têm namorada.
+                Sonhando dar uma virada na situação, eles planejam transformar o
+                aniversário de Thomas em um acontecimento épico. Para tanto realizam uma
+                grande festa na casa do aniversariante, aproveitando o fato que os pais
+                dele estarão viajando no fim de semana.
+                </p>
+            </div>
+        </section>
+        <section class="galeria" id="imagens">
+            <div class="galeria__imagens">
+                <div class="galeria__imagens__item">
+                    <img src="../build/images/brinde.jpg" alt="">
+                </div>
+                <div class="galeria__imagens__item">
+                    <img src="../build/images/pool.webp" alt="">
+                </div>
+                <div class="galeria__imagens__item">
+                    <img src="../build/images/projeto-x02.jpg" alt="">
+                </div>
+                <div class="galeria__imagens__item">
+                    <img src="../build/images/projeto-x-04.jpg" alt="">
+                </div>
+                <div class="galeria__imagens__item">
+                    <img src="../build/images/projeto-x-05.jpg" alt="">
+                </div>
+                <div class="galeria__imagens__item">
+                    <img src="../build/images/projeto-x-03.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="trailer" id="trailer">
+            <div class="trailer__title">
+                <h2>Saiba mais, assista ao trailer abaixo:</h2>
+            </div>
+            <div class="trailer__video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NraetGr2Kfw?si=pFrc1oXqok73-1CB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+        <a class="voltar__topo" href="#">Voltar ao topo</a>
+        <footer class="footer">
+            <h3>Tarefa Modulo 22 EBAC - Desenvolvido por <a href="https://instagram.com/JohnataVinicius" target="_blank">Johnata Moreira</a></h3>
+        </footer>
+    </body>
 </html>

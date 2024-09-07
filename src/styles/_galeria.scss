@@ -1,0 +1,19 @@
+.galeria__imagens{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 50px;
+
+    &__item{
+        
+        img{
+            width: 100%;
+            border-radius: 5px;
+            
+        }
+    }
+
+    @media (max-width: 768px){
+        display: block;
+    }
+}

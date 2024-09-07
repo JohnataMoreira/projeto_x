@@ -2,14 +2,12 @@
     &__img{
         mask-image: linear-gradient(to bottom, #000 50%, rgba(0,0,0,0.01) 92%);
         margin-bottom: 50px;
+        border-radius: 5px 5px 0 0;
     }
 
     &__momentos{
-        
         &__menu{
-
             &__link{
-
                 &:nth-child(2){
                     margin-top: 10px;
                     margin-bottom: 10px;
@@ -24,6 +22,7 @@
                     border: 2px solid #89f;
                     border-radius: 5px;
                     text-align: center;
+                    align-content: center;
                     text-transform: uppercase;
                     font-weight: bold;
                     font-size: 24px;

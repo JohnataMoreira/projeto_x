@@ -5,5 +5,10 @@
         font-size: 46px;
         text-align: center;
         color:#333;
+
+        @media(max-width: 768px){
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
     }
 }

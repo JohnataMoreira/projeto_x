@@ -21,10 +21,17 @@ a {
   text-align: center;
   color: #333;
 }
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+}
 
 .intro__img {
   mask-image: linear-gradient(to bottom, #000 50%, rgba(0, 0, 0, 0.01) 92%);
   margin-bottom: 50px;
+  border-radius: 5px 5px 0 0;
 }
 .intro__momentos__menu__link:nth-child(2) {
   margin-top: 10px;
@@ -39,6 +46,7 @@ a {
   border: 2px solid #89f;
   border-radius: 5px;
   text-align: center;
+  align-content: center;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 24px;

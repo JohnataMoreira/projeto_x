@@ -1,3 +1,16 @@
 .footer{
-    text-align: center;
+    display: flex;
+    margin-top: 64px;
+    margin-bottom: 32px;
+    mask-image: linear-gradient(to top, #000 50%, rgba(0,0,0,0.01) 98%);
+    align-items: center;
+
+    &__text{
+        text-align: center;
+    }
+    
+    a{
+        color: black;
+        text-decoration: underline;
+    }
 }

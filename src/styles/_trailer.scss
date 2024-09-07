@@ -1,8 +1,9 @@
 .trailer{
-    margin-top: 50px;
-
+    text-align: center;
+    
     &__title{
-        margin-bottom: 12px;
+    margin-top: 50px;
+    margin-bottom: 12px;
     }
 
     @media(max-width: 768px){

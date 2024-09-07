@@ -35,14 +35,14 @@ body {
     }
 }
 
-h1 {
-    color: rgb(233, 233, 85);
-    font-size: 80px;
-}
-
 .voltar__topo{
-    margin: 20px 2px;
     color: rgba(0,0,0,.7);
+    
+    h4{
+        margin-top: 22px;
+        text-align: right;
+        margin-right: 230px;
+    }
 
     &:hover{
         color: black;

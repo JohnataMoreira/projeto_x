@@ -4,6 +4,10 @@
     grid-template-columns: 1fr 1fr;
     gap: 12px;
 
+    img{
+        border-radius: 5px;
+    }
+    
     &__text{
         h2{
             text-align: center;

@@ -1,0 +1,1 @@
+let questions=document.querySelectorAll("[data-faq-question]");for(let e=0;e<questions.length;e++)questions[e].addEventListener("click",abreOuFechaResposta);function abreOuFechaResposta(e){e.target.parentNode.classList.toggle("faq__questions__item--is-open")}

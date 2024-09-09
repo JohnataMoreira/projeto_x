@@ -1,11 +1,18 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const imagemin = require('gulp-imagemin');
+const uglify = require('gulp-uglify');
 
 function compileSass(){
-    return gulp.src('./src/styles/*.scss')
+    return gulp.src('./src/styles/**/*.scss')
     .pipe(sass({outputStyle: 'expanded'}))
     .pipe(gulp.dest('./build/styles/'));
+}
+
+function compileJS(){
+    return gulp.src('./src/scripts/*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('./build/scripts'));
 }
 
 function compileImages(){
@@ -15,7 +22,9 @@ function compileImages(){
 }
 
 function watch(){
-    gulp.watch('./src/styles/*.scss', compileSass)
+    gulp.watch('./src/styles/**/*.scss', compileSass)
 }
 
-exports.default = gulp.parallel(watch, compileImages);
+exports.default = gulp.parallel(compileSass, compileJS ,compileImages);
+
+exports.watch = watch;

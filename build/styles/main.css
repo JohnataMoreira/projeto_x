@@ -125,6 +125,49 @@ a {
   text-decoration: underline;
 }
 
+.faq h2 {
+  text-align: center;
+  margin-top: 46px;
+  margin-bottom: 30px;
+}
+.faq__questions__item {
+  background-color: #84c;
+  color: white;
+  margin-bottom: 16px;
+  border-radius: 5px;
+}
+.faq__questions__item__question {
+  position: relative;
+  display: block;
+  font-size: 20px;
+  padding: 18px;
+  cursor: pointer;
+}
+.faq__questions__item__question::after {
+  content: ">";
+  position: absolute;
+  top: 0;
+  right: 14px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 36px;
+}
+.faq__questions__item__answer {
+  height: 0;
+  overflow: hidden;
+  padding: 0 24px;
+  transition: height, 0.5s ease;
+}
+.faq__questions__item--is-open .faq__questions__item__question::after {
+  content: "<";
+}
+.faq__questions__item--is-open .faq__questions__item__answer {
+  height: auto;
+  padding-bottom: 24px;
+  transition: height, 0.5s ease;
+}
+
 @font-face {
   font-family: Cabin;
   src: url(../../assets/fonts/Cabin/static/Cabin-Regular.ttf);

@@ -33,9 +33,12 @@ a {
   margin-bottom: 50px;
   border-radius: 5px 5px 0 0;
 }
-.intro__momentos__menu__link:nth-child(2) {
+.intro__momentos__menu__link {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+.intro__momentos__menu__link:nth-child(4) {
+  margin-bottom: 0px;
 }
 .intro__momentos__menu__link .btn {
   display: block;

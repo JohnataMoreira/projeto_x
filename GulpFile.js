@@ -22,7 +22,7 @@ function compileImages(){
 }
 
 function watch(){
-    gulp.watch('./src/styles/**/*.scss', compileSass)
+    gulp.watch('./src/styles/**/*.scss', compileSass, compileJS, compileImages)
 }
 
 exports.default = gulp.parallel(compileSass, compileJS ,compileImages);
